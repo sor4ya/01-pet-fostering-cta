@@ -1,0 +1,138 @@
+/* Use a modern, easy-to-read font */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7fa; /* light teal background for the page */
+}
+
+/* Style for the CTA banner section */
+.cta-banner {
+  background-image: url('img/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(30, 136, 168, 0.85); /* blue-teal overlay */
+  background-blend-mode: lighten; /* blends overlay with image */
+  color: #15697c;
+  padding: 0 20px 60px 20px; /* remove top padding, keep bottom and sides */
+  text-align: center;
+  min-height: 450px; /* makes the banner taller */
+}
+
+/* Large, bold heading */
+.cta-banner h1 {
+  font-size: 2.5em;
+  margin-bottom: 32px; /* increased space below heading */
+  margin-top: 0; /* no space above heading */
+}
+
+/* Short description styling */
+.cta-banner p {
+  font-size: 1.2em;
+  margin-bottom: 36px; /* increased space below description */
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0; /* ensure no extra space above */
+}
+
+/* Eye-catching CTA button */
+.cta-button {
+  display: inline-block;
+  background-color: #2ed8c3; /* bright teal */
+  color: #1e355d;
+  padding: 16px 36px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  /* Add a simple shadow for emphasis */
+  box-shadow: 0 2px 8px rgba(30, 136, 168, 0.15);
+  transition: background 0.2s;
+  margin-top: 0; /* ensure no extra space above */
+}
+
+/* Button hover effect */
+.cta-button:hover {
+  background-color: #26bfa6;
+}
+
+/* Simple site header styling */
+.site-header {
+  background-color: #15697c; /* slightly darker blue-teal */
+  color: #ffffff;
+  text-align: center;
+  padding: 18px 0;
+}
+
+/* Site name style */
+.site-header h2 {
+  margin: 0;
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Info section below the banner */
+.info-section {
+  max-width: 800px;
+  margin: 40px auto 0 auto; /* center the section and add space above */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30, 136, 168, 0.08);
+  display: table; /* use table layout for simple two columns */
+  width: 100%;
+}
+
+/* Image column */
+.info-image {
+  display: table-cell;
+  width: 50%;
+  max-width: 300px;
+  vertical-align: middle;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+/* Text column */
+.info-text {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  padding-left: 24px;
+  text-align: left;
+}
+
+.info-text h3 {
+  margin-top: 0;
+  color: #1e88a8;
+  font-size: 1.5em;
+}
+
+.info-text p {
+  font-size: 1.1em;
+  color: #1e355d;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 700px) {
+  .info-section {
+    display: block;
+    text-align: center;
+  }
+  .info-image,
+  .info-text {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto 20px auto;
+  }
+  .info-text {
+    padding-left: 0;
+  }
+}
